@@ -1,0 +1,195 @@
+/* Media query for responsivity */
+/* Small screens */
+@media screen and (max-width: 40em) {
+	#menu.top-bar {
+		padding-top: 0;
+		background-color: #3F475B;
+	}
+
+	#menu ul {
+		display: block;
+	}
+	#menu a {
+		color: white;
+	}
+
+	.cell.border-left {
+		border-left: none;
+	}
+
+	.cell.border-right {
+		border-right: none;
+	}
+
+	.section-padding {
+		border-bottom: 2px solid #3F475B;
+	}
+}
+
+/* Medium screens  */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* Small and medium screens */
+@media screen and (max-width: 9375em) {
+}
+
+@media only screen and (max-width: 768px) {
+	body div.#splash {
+		background-attachment: inherit;
+	}
+}
+
+/* Shared styles */
+.flex {
+	display: flex;
+}
+
+/* Icon styles */
+.icon {
+	text-align: center;
+	margin: auto;
+}
+
+.icon span {
+	padding: 0 10px;
+	color: white;
+	font-size: 40px;
+	cursor: pointer;
+	-webkit-transition : color 300ms ease-in-out;
+    -moz-transition : color 300ms ease-in-out;
+    -o-transition : color 300ms ease-in-out;
+    transition : color 300ms ease-in-out;
+}
+
+.icon span:hover {
+	color: lightblue;
+}
+
+/* Splash page styles */
+.splash {
+	top: 0;
+    position: absolute;
+    z-index: 1;
+	width: 100vw;
+	display: flex;
+}
+
+.splash-detail {
+	margin: auto;
+}
+
+.splash-detail h1 {
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 300;
+	color: white;
+}
+
+#welcome-splash {
+	background-image: url('../purple-nebulae.jpg');
+	background-color: lightblue;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 100vh;
+}
+
+#about-splash {
+	background-color: lightblue;
+	min-height: 50vh;
+}
+
+/* Navigation bar styles */
+#menu {
+	background-color: transparent;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+#menu ul {
+	background-color: transparent;
+	margin-right: 0.625rem;
+}
+
+#menu span {
+	color: white;
+	font-size: 20px;
+}
+
+#menu a {
+	color: white;
+    font-weight: 400;
+    margin: 0 0.125rem;
+	border: 0.125rem solid transparent;
+	-webkit-transition : border 400ms ease-in;
+    -moz-transition : border 400ms ease-in;
+    -o-transition : border 400ms ease-in;
+    transition : border 400ms ease-in;
+	-webkit-transition : border 400ms ease-out;
+    -moz-transition : border 400ms ease-out;
+    -o-transition : border 400ms ease-out;
+    transition : border 400ms ease-out;
+}
+
+#menu a:hover {
+	border-bottom: 0.125rem solid #3F475B;	
+    color: #3F475B;
+}
+
+#menu a:focus {
+	color: #3F475B;
+	outline: none;
+}
+
+/* Content styles */
+.section {
+	padding: 30px;
+}
+
+.section h1 {
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 300;
+	color: #3F475B;
+}
+
+.section p {
+	font-size: 16px;
+	text-align: center;
+	margin: 10px 0;
+	padding: 0 0 30px;
+}
+
+.section h4 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	color: #3F475B;
+}
+
+.section a {
+	display: block;
+	padding: 5px 0 0;
+	text-align: center;
+}
+
+.section span.icon {
+	font-size: 40px;
+	color: #3F475B;
+	-webkit-transition : color 300ms ease-in-out;
+    -moz-transition : color 300ms ease-in-out;
+    -o-transition : color 300ms ease-in-out;
+    transition : color 300ms ease-in-out;
+}
+
+.section span.icon:hover {
+	color: lightblue;
+}
