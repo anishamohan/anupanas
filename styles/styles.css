@@ -149,19 +149,20 @@
   font-weight: 400;
   margin: 0 0.125rem;
 	border: 0.125rem solid transparent;
-	-webkit-transition : border 400ms ease-in;
-  -moz-transition : border 400ms ease-in;
-  -o-transition : border 400ms ease-in;
-  transition : border 400ms ease-in;
-	-webkit-transition : border 400ms ease-out;
-  -moz-transition : border 400ms ease-out;
-  -o-transition : border 400ms ease-out;
-  transition : border 400ms ease-out;
+	-webkit-transition : color 300ms ease-in-out;
+  -moz-transition : color 300ms ease-in-out;
+  -o-transition : color 300ms ease-in-out;
+  transition : color 300ms ease-in-out;
+	-webkit-transition : background-color 300ms ease-in-out;
+  -moz-transition : background-color 300ms ease-in-out;
+  -o-transition : background-color 300ms ease-in-out;
+  transition : background-color 300ms ease-in-out;
 }
 
 #menu a:hover {
-	border-bottom: 0.125rem solid #3F475B;	
-  color: #3F475B;
+	/* border-bottom: 0.125rem solid #3F475B;	 */
+	color: #3F475B;
+	background-color: #FFF;
 }
 
 #menu a:focus {
@@ -215,6 +216,20 @@
 
 .section span.icon:hover {
 	color: lightblue;
+}
+
+.section span.icon-circle {
+	background-color: #3F475B;
+	color: #FFF;
+	padding: 15px;
+	border-radius: 50%;
+	width: 73px;
+	height: 73px;
+}
+
+.section span.icon-circle:hover {
+	background-color: #FFF;
+	color: #3F475B;
 }
 
 .section #headshot {
