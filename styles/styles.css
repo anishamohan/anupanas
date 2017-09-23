@@ -1,7 +1,7 @@
 /* Media query for responsivity */
 /* Small screens */
 @media screen and (max-width: 40em) {
-	#menu.top-bar {
+	#menu.navbar {
 		padding-top: 0;
 		background-color: #3F475B;
 	}
@@ -9,20 +9,9 @@
 	#menu ul {
 		display: block;
 	}
+
 	#menu a {
 		color: white;
-	}
-
-	.cell.border-left {
-		border-left: none;
-	}
-
-	.cell.border-right {
-		border-right: none;
-	}
-
-	.section-padding {
-		border-bottom: 2px solid #3F475B;
 	}
 }
 
@@ -34,8 +23,9 @@
 @media screen and (max-width: 9375em) {
 }
 
+/* Phone screens */
 @media only screen and (max-width: 768px) {
-	body div.#splash {
+	body div.splash {
 		background-attachment: inherit;
 	}
 }
@@ -43,6 +33,10 @@
 /* Shared styles */
 .flex {
 	display: flex;
+}
+
+.border-right {
+	border-right: 1px solid #DDD;
 }
 
 /* Icon styles */
@@ -57,20 +51,49 @@
 	font-size: 40px;
 	cursor: pointer;
 	-webkit-transition : color 300ms ease-in-out;
-    -moz-transition : color 300ms ease-in-out;
-    -o-transition : color 300ms ease-in-out;
-    transition : color 300ms ease-in-out;
+  -moz-transition : color 300ms ease-in-out;
+  -o-transition : color 300ms ease-in-out;
+  transition : color 300ms ease-in-out;
 }
 
 .icon span:hover {
 	color: lightblue;
 }
 
+/* Footer styles */
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	background-color: #efefef;
+	text-align: center;
+}
+
+.footer span {
+	padding: 5px;
+	font-size: xx-large;
+	color: #3F475B;
+	-webkit-transition : color 300ms ease-in-out;
+  -moz-transition : color 300ms ease-in-out;
+  -o-transition : color 300ms ease-in-out;
+  transition : color 300ms ease-in-out;
+}
+
+.footer span:hover {
+	color: lightblue;
+}
+
+.footer a:hover, .footer a:active, .footer a:focus {
+	text-decoration: none;
+	color: lightblue;
+}
+
 /* Splash page styles */
 .splash {
 	top: 0;
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+	z-index: 1;
 	width: 100vw;
 	display: flex;
 }
@@ -89,12 +112,12 @@
 }
 
 #welcome-splash {
-	background-image: url('../purple-nebulae.jpg');
+	background-image: url('../images/purple-nebulae.jpg');
 	background-color: lightblue;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	min-height: 100vh;
 }
 
@@ -123,22 +146,22 @@
 
 #menu a {
 	color: white;
-    font-weight: 400;
-    margin: 0 0.125rem;
+  font-weight: 400;
+  margin: 0 0.125rem;
 	border: 0.125rem solid transparent;
 	-webkit-transition : border 400ms ease-in;
-    -moz-transition : border 400ms ease-in;
-    -o-transition : border 400ms ease-in;
-    transition : border 400ms ease-in;
+  -moz-transition : border 400ms ease-in;
+  -o-transition : border 400ms ease-in;
+  transition : border 400ms ease-in;
 	-webkit-transition : border 400ms ease-out;
-    -moz-transition : border 400ms ease-out;
-    -o-transition : border 400ms ease-out;
-    transition : border 400ms ease-out;
+  -moz-transition : border 400ms ease-out;
+  -o-transition : border 400ms ease-out;
+  transition : border 400ms ease-out;
 }
 
 #menu a:hover {
 	border-bottom: 0.125rem solid #3F475B;	
-    color: #3F475B;
+  color: #3F475B;
 }
 
 #menu a:focus {
@@ -185,11 +208,19 @@
 	font-size: 40px;
 	color: #3F475B;
 	-webkit-transition : color 300ms ease-in-out;
-    -moz-transition : color 300ms ease-in-out;
-    -o-transition : color 300ms ease-in-out;
-    transition : color 300ms ease-in-out;
+  -moz-transition : color 300ms ease-in-out;
+  -o-transition : color 300ms ease-in-out;
+  transition : color 300ms ease-in-out;
 }
 
 .section span.icon:hover {
 	color: lightblue;
+}
+
+.section #headshot {
+	margin: auto;
+  border-radius: 50%;
+  width: 200px;
+  display: flex;
+  padding: 20px 0 10px;
 }
